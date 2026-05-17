@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Donate – NYRCST</title>
+  <meta name="description" content="Support NYRCST's humanitarian work through donations. Your contribution helps fund blood donation, disaster relief, health services, and youth programs."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .donate-section{padding:80px 0}
+    .donate-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+    .donate-info h2{font-size:1.8rem;font-weight:800;color:#1a3a5c;margin-bottom:18px}
+    .donate-info p{color:#555;line-height:1.8;margin-bottom:16px}
+    .impact-list{margin:24px 0}
+    .impact-item{display:flex;gap:14px;margin-bottom:18px;align-items:center;background:#f7f7f7;padding:16px;border-radius:8px;border-left:4px solid #cc0000}
+    .impact-item i{font-size:1.5rem;color:#cc0000;flex-shrink:0}
+    .impact-item p{color:#444;font-size:0.9rem;line-height:1.5;margin:0}
+    .impact-item strong{display:block;font-size:1rem;color:#1a3a5c;font-weight:700}
+    .donate-form-box{background:#f7f7f7;border-radius:12px;padding:44px}
+    .donate-form-box h2{font-size:1.5rem;font-weight:800;color:#1a3a5c;margin-bottom:28px}
+    .amount-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+    .amount-btn{background:#fff;border:2px solid #e0e0e0;border-radius:8px;padding:14px 10px;font-size:1rem;font-weight:700;color:#333;cursor:pointer;transition:all .3s;text-align:center}
+    .amount-btn:hover,.amount-btn.active{background:#cc0000;color:#fff;border-color:#cc0000}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-weight:600;color:#333;margin-bottom:7px;font-size:0.88rem}
+    .form-group input,.form-group select{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:6px;font-size:0.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .3s;background:#fff}
+    .form-group input:focus,.form-group select:focus{border-color:#cc0000}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .btn-donate-big{background:#cc0000;color:#fff;border:none;padding:16px;border-radius:6px;font-weight:700;font-size:1.1rem;cursor:pointer;transition:background .3s;width:100%;display:flex;align-items:center;justify-content:center;gap:10px}
+    .btn-donate-big:hover{background:#a00000}
+    .secure-note{text-align:center;margin-top:14px;color:#888;font-size:0.8rem}
+    .secure-note i{color:#2c7a2c}
+    .success-msg{display:none;background:#d4edda;color:#155724;padding:14px 20px;border-radius:6px;margin-top:10px;font-weight:600}
+    .bank-details{background:#fff;border-radius:10px;padding:24px;margin-top:24px;border:2px solid #e0e0e0}
+    .bank-details h4{font-size:1rem;font-weight:700;color:#1a3a5c;margin-bottom:14px}
+    .bank-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:0.88rem}
+    .bank-row:last-child{border-bottom:none}
+    .bank-row span:first-child{color:#666;font-weight:500}
+    .bank-row span:last-child{color:#333;font-weight:600}
+    @media(max-width:768px){.donate-grid{grid-template-columns:1fr}.amount-grid{grid-template-columns:repeat(3,1fr)}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><span><i class="fas fa-phone"></i> NYRCST Hotline: <strong>+977-1-5370650</strong></span><span><i class="fas fa-envelope"></i> nyrcst@nrcs.org</span></div><div class="top-bar-right"><a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a><a href="donate.html" class="btn-donate">DONATE</a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-text"><span class="cross-icon">✚</span><div><span class="org-name">NYRCST</span><span class="org-full">Nepal Youth Red Cross Society Thapathali</span></div></div></a><nav class="main-nav"><ul><li class="has-dropdown"><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html#overview">Overview</a></li><li><a href="about.html#mission">Mission</a></li><li><a href="about.html#team">Our Team</a></li></ul></li><li class="has-dropdown"><a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="programs.html#blood">Blood Donation</a></li><li><a href="programs.html#health">Health Services</a></li><li><a href="programs.html#disaster">Disaster Response</a></li></ul></li><li class="has-dropdown"><a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li></ul></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+  <section class="page-hero">
+    <div class="container"><h1>Make a Donation</h1><p>Your generosity powers our humanitarian mission</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Donate</span></div></div>
+  </section>
+
+  <section class="donate-section">
+    <div class="container donate-grid">
+      <div class="donate-info">
+        <div class="section-badge">YOUR IMPACT</div>
+        <h2>Every Rupee Makes a Difference</h2>
+        <p>Your donation directly funds NYRCST's life-saving programs – from blood donation camps to disaster relief operations. We are a transparent, registered humanitarian organization and every contribution is used effectively.</p>
+        <div class="impact-list">
+          <div class="impact-item"><i class="fas fa-tint"></i><div><strong>NPR 500</strong><p>Covers the cost of blood donation supplies for 5 donors</p></div></div>
+          <div class="impact-item"><i class="fas fa-first-aid"></i><div><strong>NPR 1,000</strong><p>Funds first aid training materials for one student</p></div></div>
+          <div class="impact-item"><i class="fas fa-home"></i><div><strong>NPR 5,000</strong><p>Provides emergency relief kit for one disaster-affected family</p></div></div>
+          <div class="impact-item"><i class="fas fa-heartbeat"></i><div><strong>NPR 10,000</strong><p>Sponsors a free health camp serving 50+ community members</p></div></div>
+        </div>
+        <div class="bank-details">
+          <h4><i class="fas fa-university" style="color:#cc0000;margin-right:8px"></i>Bank Transfer Details</h4>
+          <div class="bank-row"><span>Bank Name:</span><span>Nepal Bank Limited</span></div>
+          <div class="bank-row"><span>Account Name:</span><span>NYRCST Nepal Youth Red Cross Society Thapathali</span></div>
+          <div class="bank-row"><span>Account No:</span><span>0010017580200028</span></div>
+          <div class="bank-row"><span>Branch:</span><span>Thapathali Branch</span></div>
+          <div class="bank-row"><span>Swift Code:</span><span>NEBLNPKT</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="donate-form-box">
+          <h2><i class="fas fa-heart" style="color:#cc0000;margin-right:8px"></i>Donate Online</h2>
+          <p style="color:#666;font-size:0.88rem;margin-bottom:22px">Select an amount or enter your own.</p>
+          <div class="amount-grid">
+            <button class="amount-btn" onclick="setAmount(500,this)">NPR 500</button>
+            <button class="amount-btn active" onclick="setAmount(1000,this)">NPR 1,000</button>
+            <button class="amount-btn" onclick="setAmount(2500,this)">NPR 2,500</button>
+            <button class="amount-btn" onclick="setAmount(5000,this)">NPR 5,000</button>
+            <button class="amount-btn" onclick="setAmount(10000,this)">NPR 10,000</button>
+            <button class="amount-btn" onclick="setAmount('custom',this)">Custom</button>
+          </div>
+          <div class="form-group">
+            <label>Donation Amount (NPR) *</label>
+            <input type="number" id="amountInput" value="1000" min="100" required placeholder="Enter amount"/>
+          </div>
+          <form id="donateForm" onsubmit="submitDonate(event)">
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input type="text" required placeholder="First name"/></div>
+              <div class="form-group"><label>Last Name *</label><input type="text" required placeholder="Last name"/></div>
+            </div>
+            <div class="form-group"><label>Email *</label><input type="email" required placeholder="your@email.com"/></div>
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+977-xxx-xxxxx"/></div>
+            <div class="form-group">
+              <label>Donate For</label>
+              <select>
+                <option>General Support</option>
+                <option>Blood Donation Program</option>
+                <option>Disaster Relief</option>
+                <option>Health Programs</option>
+                <option>Youth Empowerment</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Payment Method</label>
+              <select>
+                <option>eSewa</option>
+                <option>Khalti</option>
+                <option>Bank Transfer</option>
+                <option>Cash at Office</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-donate-big"><i class="fas fa-heart"></i> Donate Now</button>
+            <p class="secure-note"><i class="fas fa-lock"></i> Secure &amp; Transparent. 100% goes to programs.</p>
+            <div class="success-msg" id="donateSuccess">💖 Thank you for your generous donation! We will send you a confirmation receipt by email.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><div class="footer-logo"><span class="cross-icon red">✚</span><div><span class="footer-org-name">NYRCST</span><span class="footer-org-full">Nepal Youth Red Cross Society Thapathali</span></div></div><p>A branch of Nepal Red Cross Society dedicated to humanitarian service at Thapathali Campus, Kathmandu.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Works</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +977-1-5370650</li><li><i class="fas fa-envelope"></i> nyrcst@nrcs.org</li><li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Kathmandu</li></ul><a href="donate.html" class="btn-donate-footer">DONATE</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2025 NYRCST. All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    function setAmount(val, btn){
+      document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      if(val==='custom'){document.getElementById('amountInput').value='';document.getElementById('amountInput').focus();}
+      else{document.getElementById('amountInput').value=val;}
+    }
+    function submitDonate(e){e.preventDefault();document.getElementById('donateSuccess').style.display='block';e.target.reset();setTimeout(()=>{document.getElementById('donateSuccess').style.display='none';},7000);}
+  </script>
+</body>
+</html>

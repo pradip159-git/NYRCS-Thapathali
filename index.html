@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYRCST – Nepal Youth Red Cross Society Thapathali</title>
+  <meta name="description" content="Nepal Youth Red Cross Society Thapathali (NYRCST) – A branch of Nepal Red Cross Society dedicated to humanitarian service, blood donation, disaster response, and youth empowerment in Thapathali." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-phone"></i> NYRCST Hotline: <strong>+977-1-5370650</strong></span>
+        <span><i class="fas fa-envelope"></i> nyrcst@nrcs.org</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a>
+        <a href="donate.html" class="btn-donate">DONATE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="NYRCST Logo" class="logo-img" onerror="this.onerror=null;this.src='';this.parentElement.innerHTML='<div class=\'logo-text\'><span class=\'cross-icon\'>✚</span><div><span class=\'org-name\'>NYRCST</span><span class=\'org-full\'>Nepal Youth Red Cross Society Thapathali</span></div></div>';" />
+        <div class="logo-text-fallback">
+          <span class="cross-icon">✚</span>
+          <div>
+            <span class="org-name">NYRCST</span>
+            <span class="org-full">Nepal Youth Red Cross Society Thapathali</span>
+          </div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li class="has-dropdown">
+            <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="about.html#overview">Overview</a></li>
+              <li><a href="about.html#mission">Mission &amp; Vision</a></li>
+              <li><a href="about.html#principles">Principles</a></li>
+              <li><a href="about.html#team">Our Team</a></li>
+              <li><a href="about.html#history">History</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="programs.html#disaster">Disaster Response</a></li>
+              <li><a href="programs.html#health">Health Services</a></li>
+              <li><a href="programs.html#blood">Blood Donation</a></li>
+              <li><a href="programs.html#youth">Youth Programs</a></li>
+              <li><a href="programs.html#community">Community Development</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="membership.html">Membership</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="resources.html">Resources <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="resources.html#reports">Reports</a></li>
+              <li><a href="resources.html#publications">Publications</a></li>
+              <li><a href="resources.html#gallery">Photo Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider" id="home">
+    <div class="slide active" style="background-image: url('assets/hero1.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Serving Humanity with Compassion</h1>
+        <p>Nepal Youth Red Cross Society Thapathali – Committed to humanitarian service, disaster relief, and youth empowerment.</p>
+        <div class="slide-btns">
+          <a href="programs.html" class="btn btn-primary">Our Programs</a>
+          <a href="donate.html" class="btn btn-secondary">Donate Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('assets/hero2.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Blood Donation Saves Lives</h1>
+        <p>Join our blood donation drives and be a lifesaver for those in need across Nepal.</p>
+        <div class="slide-btns">
+          <a href="programs.html#blood" class="btn btn-primary">Donate Blood</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('assets/hero3.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Youth Empowerment &amp; Training</h1>
+        <p>Empowering young volunteers through first aid, disaster preparedness, and leadership programs.</p>
+        <div class="slide-btns">
+          <a href="volunteer.html" class="btn btn-primary">Become a Volunteer</a>
+          <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+    <button class="slider-btn next" id="nextBtn">&#10095;</button>
+    <div class="slider-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENT TICKER -->
+  <div class="announcement-bar">
+    <div class="ticker-label"><i class="fas fa-bullhorn"></i> Announcements</div>
+    <div class="ticker-wrap">
+      <div class="ticker-content" id="ticker">
+        <span>🔴 Blood Donation Camp – Thapathali Campus, Every Saturday 9AM–1PM</span>
+        <span>📢 First Aid Training Registration Open – Apply Now</span>
+        <span>🌊 Volunteer Recruitment for Monsoon Disaster Preparedness – Join Us</span>
+        <span>❤️ Youth Red Cross Unit Meeting – Every Friday 3PM at Campus Hall</span>
+        <span>🏥 Free Health Camp – Thapathali Area, Contact: +977-1-5370650</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <h3 class="counter" data-target="1200">0</h3>
+          <p>Active Volunteers</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-tint"></i>
+          <h3 class="counter" data-target="5000">0</h3>
+          <p>Blood Units Collected</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-hands-helping"></i>
+          <h3 class="counter" data-target="300">0</h3>
+          <p>Disaster Relief Operations</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-heartbeat"></i>
+          <h3 class="counter" data-target="100">0</h3>
+          <p>Blood Donation Centers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SNAPSHOT -->
+  <section class="about-snapshot">
+    <div class="container about-grid">
+      <div class="about-text">
+        <div class="section-badge">WHO WE ARE</div>
+        <h2>Nepal Youth Red Cross Society Thapathali</h2>
+        <p>The Nepal Youth Red Cross Society Thapathali (NYRCST) is a branch of Nepal Red Cross Society (NRCS) operating at Thapathali Campus. Founded with the mission to promote humanitarian values among youth, we empower students and young volunteers through service, education, and action.</p>
+        <p>Guided by the seven Fundamental Principles of the International Red Cross and Red Crescent Movement – <strong>Humanity, Impartiality, Neutrality, Independence, Voluntary Service, Unity, and Universality</strong> – NYRCST works to prevent and alleviate human suffering.</p>
+        <a href="about.html" class="btn btn-outline">Read More About Us</a>
+      </div>
+      <div class="about-image">
+        <img src="assets/about.jpg" alt="NYRCST Volunteers" onerror="this.src='https://placehold.co/600x400/cc0000/ffffff?text=NYRCST+Volunteers'" />
+        <div class="about-badge">
+          <span>Est.</span>
+          <strong>2005</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS / OUR WORKS -->
+  <section class="programs-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">WHAT WE DO</div>
+        <h2>Our Programs</h2>
+        <p>NYRCST works across multiple areas to serve the community and empower youth.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-first-aid"></i></div>
+          <h3>First Aid Training</h3>
+          <p>We train students and community members in basic and advanced first aid, preparing them to respond in emergencies.</p>
+          <a href="programs.html#health" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-tint"></i></div>
+          <h3>Blood Donation</h3>
+          <p>Regular blood donation camps organized at campus and surrounding communities to meet the demand for safe blood.</p>
+          <a href="programs.html#blood" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-home"></i></div>
+          <h3>Disaster Response</h3>
+          <p>Trained volunteers who respond rapidly to floods, earthquakes, and other disasters with relief and rescue operations.</p>
+          <a href="programs.html#disaster" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Youth Empowerment</h3>
+          <p>Leadership development, peer education, and life skills training for students at Thapathali Campus.</p>
+          <a href="programs.html#youth" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Health Services</h3>
+          <p>Free health camps, hygiene promotion, and community health awareness programs across Thapathali area.</p>
+          <a href="programs.html#health" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Community Service</h3>
+          <p>Environmental cleanup, tree plantation, and community development initiatives led by our volunteers.</p>
+          <a href="programs.html#community" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS & EVENTS -->
+  <section class="news-section">
+    <div class="container">
+      <div class="news-header">
+        <h2><span>Recent News and Events</span></h2>
+        <a href="news.html" class="btn btn-outline-red">View All</a>
+      </div>
+      <div class="news-tabs">
+        <button class="tab-btn active" data-tab="news">News</button>
+        <button class="tab-btn" data-tab="events">Events</button>
+        <button class="tab-btn" data-tab="press">Press Release</button>
+      </div>
+      <div class="news-grid" id="news-container">
+        <div class="news-card">
+          <div class="news-img"><img src="assets/news1.jpg" alt="News" onerror="this.src='https://placehold.co/400x250/cc0000/ffffff?text=NYRCST+News'" /></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> May 15, 2025</span>
+            <h4>NYRCST Blood Donation Camp Collects 200+ Units</h4>
+            <p>A successful blood donation drive organized by NYRCST at Thapathali Campus collected over 200 units of blood for Nepal Red Cross Blood Bank.</p>
+            <a href="news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img"><img src="assets/news2.jpg" alt="News" onerror="this.src='https://placehold.co/400x250/1a3a5c/ffffff?text=First+Aid+Training'" /></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> April 22, 2025</span>
+            <h4>First Aid Training for 150 Students at Thapathali Campus</h4>
+            <p>NYRCST conducted a comprehensive first aid training program for 150 engineering students, equipping them with lifesaving skills.</p>
+            <a href="news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img"><img src="assets/news3.jpg" alt="News" onerror="this.src='https://placehold.co/400x250/2c7a2c/ffffff?text=Disaster+Relief'" /></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> March 10, 2025</span>
+            <h4>NYRCST Volunteers Participate in Earthquake Drill</h4>
+            <p>More than 80 NYRCST volunteers participated in the national earthquake preparedness drill organized in coordination with NRCS.</p>
+            <a href="news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">OUR GALLERY</div>
+        <h2>Photo Gallery</h2>
+        <p>Glimpses of our activities and community service programs.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/gallery1.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/cc0000/ffffff?text=NYRCST+Activity'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item"><img src="assets/gallery2.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/1a3a5c/ffffff?text=Blood+Donation'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item"><img src="assets/gallery3.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/c7a614/ffffff?text=Training+Camp'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item"><img src="assets/gallery4.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/2c7a2c/ffffff?text=Community+Service'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item"><img src="assets/gallery5.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/8b0000/ffffff?text=Disaster+Relief'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item"><img src="assets/gallery6.jpg" alt="Gallery" onerror="this.src='https://placehold.co/400x300/4a0080/ffffff?text=Youth+Program'" /><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+      </div>
+      <div class="gallery-cta">
+        <a href="resources.html#gallery" class="btn btn-primary">View Full Gallery</a>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">×</button>
+      <img id="lightboxImg" src="" alt="Gallery" />
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section class="get-involved">
+    <div class="container get-involved-grid">
+      <div class="involve-card volunteer-card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Become a Volunteer</h3>
+        <p>Join NYRCST as a volunteer and make a real difference in your community. Training provided.</p>
+        <a href="volunteer.html" class="btn btn-white">Volunteer Now</a>
+      </div>
+      <div class="involve-card donate-card">
+        <i class="fas fa-hand-holding-usd"></i>
+        <h3>Make a Donation</h3>
+        <p>Your contribution supports our programs in disaster relief, health, blood donation, and youth empowerment.</p>
+        <a href="donate.html" class="btn btn-white">Donate Now</a>
+      </div>
+      <div class="involve-card blood-card">
+        <i class="fas fa-tint"></i>
+        <h3>Donate Blood</h3>
+        <p>Blood donation saves lives. Join our regular blood donation camps at Thapathali Campus.</p>
+        <a href="programs.html#blood" class="btn btn-white">Donate Blood</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners-section">
+    <div class="container">
+      <h3 class="partners-title">Our Partners &amp; Network</h3>
+      <div class="partners-marquee">
+        <div class="partners-track">
+          <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_of_NRCS.png/120px-Logo_of_NRCS.png" alt="NRCS" onerror="this.src='https://placehold.co/120x60/cc0000/ffffff?text=NRCS'" /><span>NRCS</span></div>
+          <div class="partner-logo"><span class="partner-text">American Red Cross</span></div>
+          <div class="partner-logo"><span class="partner-text">IFRC</span></div>
+          <div class="partner-logo"><span class="partner-text">ICRC</span></div>
+          <div class="partner-logo"><span class="partner-text">British Red Cross</span></div>
+          <div class="partner-logo"><span class="partner-text">Danish Red Cross</span></div>
+          <div class="partner-logo"><span class="partner-text">Finnish Red Cross</span></div>
+          <div class="partner-logo"><span class="partner-text">Canadian Red Cross</span></div>
+          <!-- Duplicate for seamless scroll -->
+          <div class="partner-logo"><span class="partner-text">NRCS</span></div>
+          <div class="partner-logo"><span class="partner-text">American Red Cross</span></div>
+          <div class="partner-logo"><span class="partner-text">IFRC</span></div>
+          <div class="partner-logo"><span class="partner-text">ICRC</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <span class="cross-icon red">✚</span>
+          <div>
+            <span class="footer-org-name">NYRCST</span>
+            <span class="footer-org-full">Nepal Youth Red Cross Society Thapathali</span>
+          </div>
+        </div>
+        <p>NYRCST is a branch of Nepal Red Cross Society dedicated to humanitarian service, blood donation, disaster response, and youth empowerment at Thapathali Campus, Kathmandu, Nepal. Guided by the seven Fundamental Principles of the Red Cross &amp; Red Crescent Movement.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Our Works</a></li>
+          <li><a href="news.html">News &amp; Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> +977-1-5370650</li>
+          <li><i class="fas fa-envelope"></i> nyrcst@nrcs.org</li>
+          <li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Thapathali, Kathmandu</li>
+          <li><i class="fas fa-box"></i> Post Box No: 217</li>
+          <li><i class="fas fa-fax"></i> Fax: +977-1-4271915</li>
+        </ul>
+        <a href="donate.html" class="btn btn-donate-footer">DONATE</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Nepal Youth Red Cross Society Thapathali (NYRCST). All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

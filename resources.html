@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Resources &amp; Gallery – NYRCST</title>
+  <meta name="description" content="NYRCST resources including reports, publications, and photo gallery of our humanitarian activities."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .resources-section{padding:80px 0;background:#fff}
+    .docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+    .doc-card{background:#f7f7f7;border-radius:10px;padding:28px 24px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;border:2px solid transparent}
+    .doc-card:hover{border-color:#cc0000;background:#fff;box-shadow:0 4px 20px rgba(204,0,0,.1)}
+    .doc-icon{width:50px;height:50px;background:#cc0000;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0}
+    .doc-text h4{font-size:0.95rem;font-weight:700;color:#1a3a5c;margin-bottom:6px}
+    .doc-text p{font-size:0.8rem;color:#888;margin-bottom:10px}
+    .doc-download{font-size:0.8rem;color:#cc0000;font-weight:600;display:flex;align-items:center;gap:5px}
+    .doc-download:hover{gap:8px}
+    .gallery-full{padding:80px 0;background:#f7f7f7}
+    .gallery-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+    .filter-btn{background:#fff;border:2px solid #e0e0e0;padding:8px 20px;border-radius:30px;font-weight:600;font-size:0.85rem;color:#555;cursor:pointer;transition:all .3s}
+    .filter-btn.active,.filter-btn:hover{background:#cc0000;color:#fff;border-color:#cc0000}
+    .gallery-full-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    @media(max-width:992px){.docs-grid{grid-template-columns:repeat(2,1fr)}.gallery-full-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.docs-grid{grid-template-columns:1fr}.gallery-full-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><span><i class="fas fa-phone"></i> NYRCST Hotline: <strong>+977-1-5370650</strong></span><span><i class="fas fa-envelope"></i> nyrcst@nrcs.org</span></div><div class="top-bar-right"><a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a><a href="donate.html" class="btn-donate">DONATE</a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-text"><span class="cross-icon">✚</span><div><span class="org-name">NYRCST</span><span class="org-full">Nepal Youth Red Cross Society Thapathali</span></div></div></a><nav class="main-nav"><ul><li class="has-dropdown"><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html#overview">Overview</a></li><li><a href="about.html#mission">Mission</a></li><li><a href="about.html#team">Our Team</a></li></ul></li><li class="has-dropdown"><a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="programs.html#blood">Blood Donation</a></li><li><a href="programs.html#health">Health Services</a></li><li><a href="programs.html#disaster">Disaster Response</a></li></ul></li><li class="has-dropdown"><a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li></ul></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+  <section class="page-hero">
+    <div class="container"><h1>Resources</h1><p>Reports, publications and photo gallery from NYRCST</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Resources</span></div></div>
+  </section>
+
+  <!-- REPORTS -->
+  <section class="resources-section" id="reports">
+    <div class="container">
+      <div class="section-header"><div class="section-badge">DOWNLOADS</div><h2>Annual Reports &amp; Publications</h2><p>Download our annual reports, program reports, and publications.</p></div>
+      <div class="docs-grid">
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-file-pdf"></i></div><div class="doc-text"><h4>Annual Report 2024–2025</h4><p>PDF • 3.2 MB • Published May 2025</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-file-pdf"></i></div><div class="doc-text"><h4>Annual Report 2023–2024</h4><p>PDF • 2.8 MB • Published May 2024</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-file-alt"></i></div><div class="doc-text"><h4>Blood Donation Program Report 2025</h4><p>PDF • 1.5 MB • Published March 2025</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-file-alt"></i></div><div class="doc-text"><h4>First Aid Training Manual</h4><p>PDF • 4.1 MB • NRCS Certified</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-file-powerpoint"></i></div><div class="doc-text"><h4>Disaster Preparedness Guide</h4><p>PDF • 2.0 MB • Updated 2024</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+        <div class="doc-card"><div class="doc-icon"><i class="fas fa-newspaper"></i></div><div class="doc-text"><h4>NYRCST Newsletter – 2025</h4><p>PDF • 1.2 MB • Quarterly</p><a href="#" class="doc-download"><i class="fas fa-download"></i> Download</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-full" id="gallery">
+    <div class="container">
+      <div class="section-header"><div class="section-badge">PHOTO GALLERY</div><h2>Our Activities in Pictures</h2><p>A visual journey through NYRCST's programs and community service activities.</p></div>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="blood">Blood Donation</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+        <button class="filter-btn" data-filter="disaster">Disaster</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+      <div class="gallery-full-grid">
+        <div class="gallery-item" data-cat="blood"><img src="assets/gallery1.jpg" alt="" onerror="this.src='https://placehold.co/400x300/cc0000/ffffff?text=Blood+Donation'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="training"><img src="assets/gallery2.jpg" alt="" onerror="this.src='https://placehold.co/400x300/1a3a5c/ffffff?text=First+Aid+Training'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="disaster"><img src="assets/gallery3.jpg" alt="" onerror="this.src='https://placehold.co/400x300/8b0000/ffffff?text=Disaster+Relief'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="community"><img src="assets/gallery4.jpg" alt="" onerror="this.src='https://placehold.co/400x300/2c7a2c/ffffff?text=Community+Service'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="events"><img src="assets/gallery5.jpg" alt="" onerror="this.src='https://placehold.co/400x300/c7a614/000000?text=Events'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="blood"><img src="assets/gallery6.jpg" alt="" onerror="this.src='https://placehold.co/400x300/4a0080/ffffff?text=Blood+Camp'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="training"><img src="assets/gallery7.jpg" alt="" onerror="this.src='https://placehold.co/400x300/cc0000/ffffff?text=Training'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="community"><img src="assets/gallery8.jpg" alt="" onerror="this.src='https://placehold.co/400x300/1a3a5c/ffffff?text=Community'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="events"><img src="assets/gallery9.jpg" alt="" onerror="this.src='https://placehold.co/400x300/2c7a2c/ffffff?text=Annual+Event'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="disaster"><img src="assets/gallery10.jpg" alt="" onerror="this.src='https://placehold.co/400x300/8b0000/ffffff?text=Relief+Work'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="blood"><img src="assets/gallery11.jpg" alt="" onerror="this.src='https://placehold.co/400x300/cc0000/ffffff?text=Donation+Drive'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+        <div class="gallery-item" data-cat="community"><img src="assets/gallery12.jpg" alt="" onerror="this.src='https://placehold.co/400x300/4a0080/ffffff?text=Youth+Service'"/><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox"><button class="lightbox-close" id="lightboxClose">×</button><img id="lightboxImg" src="" alt="Gallery"/></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><div class="footer-logo"><span class="cross-icon red">✚</span><div><span class="footer-org-name">NYRCST</span><span class="footer-org-full">Nepal Youth Red Cross Society Thapathali</span></div></div><p>A branch of Nepal Red Cross Society dedicated to humanitarian service at Thapathali Campus, Kathmandu.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Works</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +977-1-5370650</li><li><i class="fas fa-envelope"></i> nyrcst@nrcs.org</li><li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Kathmandu</li></ul><a href="donate.html" class="btn-donate-footer">DONATE</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2025 NYRCST. All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Gallery filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.gallery-full-grid .gallery-item').forEach(item => {
+          item.style.display = (filter === 'all' || item.dataset.cat === filter) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

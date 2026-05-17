@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Volunteer – NYRCST</title>
+  <meta name="description" content="Become a volunteer with Nepal Youth Red Cross Society Thapathali and make a difference in your community."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .vol-why{padding:80px 0;background:#f7f7f7}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+    .why-card{background:#fff;border-radius:10px;padding:32px 26px;box-shadow:0 4px 20px rgba(0,0,0,.07);text-align:center;transition:transform .3s}
+    .why-card:hover{transform:translateY(-6px)}
+    .why-card i{font-size:2.2rem;color:#cc0000;margin-bottom:16px}
+    .why-card h4{font-size:1rem;font-weight:700;color:#1a3a5c;margin-bottom:10px}
+    .why-card p{color:#666;font-size:0.88rem;line-height:1.6}
+    .vol-form-section{padding:80px 0;background:#fff}
+    .vol-form-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+    .vol-info h2{font-size:1.8rem;font-weight:800;color:#1a3a5c;margin-bottom:18px}
+    .vol-info p{color:#555;line-height:1.8;margin-bottom:16px}
+    .vol-steps{margin-top:24px}
+    .step{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+    .step-num{width:40px;height:40px;background:#cc0000;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0}
+    .step-text h4{font-weight:700;color:#1a3a5c;margin-bottom:4px}
+    .step-text p{color:#666;font-size:0.88rem}
+    .vol-form-box{background:#f7f7f7;border-radius:12px;padding:40px}
+    .vol-form-box h2{font-size:1.5rem;font-weight:800;color:#1a3a5c;margin-bottom:24px}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-weight:600;color:#333;margin-bottom:7px;font-size:0.88rem}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:6px;font-size:0.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .3s;background:#fff}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#cc0000}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .btn-submit{background:#cc0000;color:#fff;border:none;padding:14px 36px;border-radius:6px;font-weight:700;font-size:1rem;cursor:pointer;transition:background .3s;width:100%}
+    .btn-submit:hover{background:#a00000}
+    .success-msg{display:none;background:#d4edda;color:#155724;padding:14px 20px;border-radius:6px;margin-top:10px;font-weight:600}
+    @media(max-width:768px){.why-grid{grid-template-columns:1fr}.vol-form-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><span><i class="fas fa-phone"></i> NYRCST Hotline: <strong>+977-1-5370650</strong></span><span><i class="fas fa-envelope"></i> nyrcst@nrcs.org</span></div><div class="top-bar-right"><a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a><a href="donate.html" class="btn-donate">DONATE</a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-text"><span class="cross-icon">✚</span><div><span class="org-name">NYRCST</span><span class="org-full">Nepal Youth Red Cross Society Thapathali</span></div></div></a><nav class="main-nav"><ul><li class="has-dropdown"><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html#overview">Overview</a></li><li><a href="about.html#mission">Mission</a></li><li><a href="about.html#team">Our Team</a></li></ul></li><li class="has-dropdown"><a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="programs.html#blood">Blood Donation</a></li><li><a href="programs.html#health">Health Services</a></li><li><a href="programs.html#disaster">Disaster Response</a></li></ul></li><li class="has-dropdown"><a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li></ul></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+  <section class="page-hero">
+    <div class="container"><h1>Become a Volunteer</h1><p>Join NYRCST and serve your community with compassion and dedication</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Volunteer</span></div></div>
+  </section>
+
+  <section class="vol-why">
+    <div class="container">
+      <div class="section-header"><div class="section-badge">WHY VOLUNTEER</div><h2>Why Join NYRCST?</h2><p>Volunteering with NYRCST is one of the most rewarding experiences you can have as a student.</p></div>
+      <div class="why-grid">
+        <div class="why-card"><i class="fas fa-certificate"></i><h4>Certified Training</h4><p>Receive NRCS-certified training in first aid, disaster response, and leadership – skills that last a lifetime.</p></div>
+        <div class="why-card"><i class="fas fa-users"></i><h4>Community Impact</h4><p>Make a real, measurable difference in the lives of people in your campus and surrounding community.</p></div>
+        <div class="why-card"><i class="fas fa-user-graduate"></i><h4>Career Development</h4><p>Build your CV with meaningful volunteer experience and gain skills valued by employers worldwide.</p></div>
+        <div class="why-card"><i class="fas fa-globe"></i><h4>Global Network</h4><p>Connect with the world's largest humanitarian network – the International Red Cross and Red Crescent Movement.</p></div>
+        <div class="why-card"><i class="fas fa-heart"></i><h4>Personal Growth</h4><p>Develop empathy, leadership, teamwork, and communication skills through real-world humanitarian service.</p></div>
+        <div class="why-card"><i class="fas fa-medal"></i><h4>Recognition</h4><p>Outstanding volunteers are recognized and awarded at campus, national, and international levels.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vol-form-section">
+    <div class="container vol-form-grid">
+      <div class="vol-info">
+        <div class="section-badge">HOW IT WORKS</div>
+        <h2>Volunteer Registration Process</h2>
+        <p>Joining NYRCST is simple. Fill out the registration form and our team will contact you within 3 working days to guide you through the orientation process.</p>
+        <div class="vol-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-text"><h4>Fill the Form</h4><p>Complete the volunteer registration form with your personal details and areas of interest.</p></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-text"><h4>Orientation</h4><p>Attend a NYRCST orientation session to learn about our organization, values, and programs.</p></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-text"><h4>Basic Training</h4><p>Complete the mandatory basic first aid and Red Cross principles training (3-day program).</p></div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-text"><h4>Start Serving</h4><p>Get assigned to your chosen program area and begin your volunteer service with NYRCST!</p></div></div>
+        </div>
+      </div>
+      <div class="vol-form-box">
+        <h2>Register as Volunteer</h2>
+        <form id="volForm" onsubmit="submitVol(event)">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" required placeholder="First name"/></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" required placeholder="Last name"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email *</label><input type="email" required placeholder="your@email.com"/></div>
+            <div class="form-group"><label>Phone *</label><input type="tel" required placeholder="+977-xxx-xxxxx"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Date of Birth</label><input type="date"/></div>
+            <div class="form-group"><label>Gender</label><select><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select></div>
+          </div>
+          <div class="form-group">
+            <label>Department / Faculty *</label>
+            <select required>
+              <option value="">Select your department</option>
+              <option>Civil Engineering</option>
+              <option>Electrical Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Electronics &amp; Communication</option>
+              <option>Computer Engineering</option>
+              <option>Architecture</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Area of Interest *</label>
+            <select required>
+              <option value="">Select your interest</option>
+              <option>Blood Donation Coordination</option>
+              <option>First Aid &amp; Health</option>
+              <option>Disaster Response</option>
+              <option>Youth Empowerment</option>
+              <option>Community Service</option>
+              <option>All Areas</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Why do you want to volunteer?</label><textarea rows="3" placeholder="Tell us your motivation..."></textarea></div>
+          <button type="submit" class="btn-submit"><i class="fas fa-hands-helping"></i> Submit Registration</button>
+          <div class="success-msg" id="volSuccess">✅ Registration submitted! We will contact you within 3 working days. Thank you for your interest in volunteering!</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><div class="footer-logo"><span class="cross-icon red">✚</span><div><span class="footer-org-name">NYRCST</span><span class="footer-org-full">Nepal Youth Red Cross Society Thapathali</span></div></div><p>A branch of Nepal Red Cross Society dedicated to humanitarian service at Thapathali Campus, Kathmandu.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Works</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +977-1-5370650</li><li><i class="fas fa-envelope"></i> nyrcst@nrcs.org</li><li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Kathmandu</li></ul><a href="donate.html" class="btn-donate-footer">DONATE</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2025 NYRCST. All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>function submitVol(e){e.preventDefault();document.getElementById('volSuccess').style.display='block';document.getElementById('volForm').reset();setTimeout(()=>{document.getElementById('volSuccess').style.display='none';},6000);}</script>
+</body>
+</html>

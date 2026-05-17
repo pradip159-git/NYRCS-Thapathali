@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact Us – NYRCST</title>
+  <meta name="description" content="Contact Nepal Youth Red Cross Society Thapathali. Find our address, phone, email and send us a message."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .contact-section{padding:80px 0}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}
+    .contact-info-box{background:#f7f7f7;border-radius:12px;padding:40px 34px}
+    .contact-info-box h2{font-size:1.6rem;font-weight:800;color:#1a3a5c;margin-bottom:24px}
+    .contact-item{display:flex;gap:18px;margin-bottom:28px;align-items:flex-start}
+    .contact-item-icon{width:48px;height:48px;background:#cc0000;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .contact-item-text h4{font-weight:700;color:#1a3a5c;margin-bottom:4px}
+    .contact-item-text p,.contact-item-text a{color:#555;font-size:0.92rem;line-height:1.6}
+    .contact-item-text a:hover{color:#cc0000}
+    .contact-form-box{background:#fff;border-radius:12px;padding:40px;box-shadow:0 4px 30px rgba(0,0,0,.08)}
+    .contact-form-box h2{font-size:1.6rem;font-weight:800;color:#1a3a5c;margin-bottom:24px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .form-group{margin-bottom:20px}
+    .form-group label{display:block;font-weight:600;color:#333;margin-bottom:7px;font-size:0.9rem}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:6px;font-size:0.93rem;font-family:'Inter',sans-serif;transition:border-color .3s;outline:none}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#cc0000}
+    .form-group textarea{resize:vertical;min-height:130px}
+    .btn-submit{background:#cc0000;color:#fff;border:none;padding:14px 36px;border-radius:6px;font-weight:700;font-size:1rem;cursor:pointer;transition:background .3s;width:100%}
+    .btn-submit:hover{background:#a00000}
+    .map-section{padding:0 0 80px}
+    .social-links-big{display:flex;gap:16px;margin-top:24px}
+    .social-links-big a{width:44px;height:44px;border-radius:50%;background:#cc0000;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .3s}
+    .social-links-big a:hover{background:#1a3a5c;transform:translateY(-3px)}
+    .success-msg{display:none;background:#d4edda;color:#155724;padding:14px 20px;border-radius:6px;margin-top:10px;font-weight:600}
+    @media(max-width:768px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><span><i class="fas fa-phone"></i> NYRCST Hotline: <strong>+977-1-5370650</strong></span><span><i class="fas fa-envelope"></i> nyrcst@nrcs.org</span></div><div class="top-bar-right"><a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a><a href="donate.html" class="btn-donate">DONATE</a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-text"><span class="cross-icon">✚</span><div><span class="org-name">NYRCST</span><span class="org-full">Nepal Youth Red Cross Society Thapathali</span></div></div></a><nav class="main-nav"><ul><li class="has-dropdown"><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html#overview">Overview</a></li><li><a href="about.html#mission">Mission &amp; Vision</a></li><li><a href="about.html#principles">Principles</a></li><li><a href="about.html#team">Our Team</a></li></ul></li><li class="has-dropdown"><a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="programs.html#blood">Blood Donation</a></li><li><a href="programs.html#health">Health Services</a></li><li><a href="programs.html#disaster">Disaster Response</a></li><li><a href="programs.html#youth">Youth Programs</a></li></ul></li><li class="has-dropdown"><a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li></ul></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+  <section class="page-hero">
+    <div class="container"><h1>Contact Us</h1><p>Reach out to us – we'd love to hear from you</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div></div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <!-- INFO -->
+      <div>
+        <div class="contact-info-box">
+          <h2>Get In Touch</h2>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text"><h4>Address</h4><p>Nepal Youth Red Cross Society Thapathali<br/>Thapathali Campus, Institute of Engineering<br/>Thapathali, Kathmandu, Nepal</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text"><h4>Phone</h4><p><a href="tel:+97715370650">+977-1-5370650</a><br/><a href="tel:+97715372761">+977-1-5372761</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text"><h4>Email</h4><p><a href="mailto:nyrcst@nrcs.org">nyrcst@nrcs.org</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-item-text"><h4>Office Hours</h4><p>Sunday – Friday: 9:00 AM – 5:00 PM<br/>Saturday: Closed (Blood Donation Camp Day)</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-fax"></i></div>
+            <div class="contact-item-text"><h4>Fax</h4><p>+977-1-4271915</p></div>
+          </div>
+          <div class="social-links-big">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- FORM -->
+      <div class="contact-form-box">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" required placeholder="Your first name"/></div>
+            <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" required placeholder="Your last name"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" required placeholder="your@email.com"/></div>
+            <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+977-xxx-xxxxx"/></div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" required>
+              <option value="">Select a subject</option>
+              <option>General Inquiry</option>
+              <option>Volunteer Registration</option>
+              <option>Blood Donation</option>
+              <option>Donation / Support</option>
+              <option>First Aid Training</option>
+              <option>Partnership</option>
+              <option>Media / Press</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Message *</label><textarea id="message" required placeholder="Write your message here..."></textarea></div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <div class="success-msg" id="successMsg">✅ Thank you! Your message has been sent. We will get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,.1)">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2!2d85.31655!3d27.69535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b9c3f23e89%3A0x49fa17d01c33ec95!2sThapathali%20Campus!5e0!3m2!1sen!2snp!4v1" width="100%" height="420" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="NYRCST Location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><div class="footer-logo"><span class="cross-icon red">✚</span><div><span class="footer-org-name">NYRCST</span><span class="footer-org-full">Nepal Youth Red Cross Society Thapathali</span></div></div><p>A branch of Nepal Red Cross Society dedicated to humanitarian service at Thapathali Campus, Kathmandu.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Works</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +977-1-5370650</li><li><i class="fas fa-envelope"></i> nyrcst@nrcs.org</li><li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Kathmandu</li></ul><a href="donate.html" class="btn-donate-footer">DONATE</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2025 NYRCST. All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      document.getElementById('successMsg').style.display='block';
+      document.getElementById('contactForm').reset();
+      setTimeout(()=>{ document.getElementById('successMsg').style.display='none'; }, 5000);
+    }
+  </script>
+</body>
+</html>
