@@ -20,27 +20,14 @@
     .idb-main-name{font-size:1.65rem;font-weight:900;color:#cc0000;letter-spacing:.5px;line-height:1.1;font-family:'Inter',sans-serif;text-transform:uppercase}
     .idb-sub-name{font-size:1rem;font-weight:700;color:#cc0000;margin:3px 0 6px}
     .idb-address{font-size:0.9rem;color:#333;font-weight:500;line-height:1.5}
-    /* Right: IOE Thapathali Campus CSS emblem */
+    /* Right: Tribhuvan University logo */
     .idb-right{flex-shrink:0}
-    .ioe-emblem{width:90px;height:90px;position:relative;display:flex;align-items:center;justify-content:center}
-    /* Outer circle border */
-    .ioe-outer{width:90px;height:90px;border-radius:50%;border:3px solid #1a3a5c;display:flex;align-items:center;justify-content:center;position:relative;background:#fff}
-    /* Rotating text ring using SVG */
-    .ioe-ring-text{position:absolute;top:0;left:0;width:90px;height:90px}
-    /* Star of David (two overlapping triangles) */
-    .ioe-star{position:relative;width:46px;height:46px;display:flex;align-items:center;justify-content:center}
-    .ioe-tri{width:0;height:0;position:absolute}
-    .ioe-tri-up{border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid #e05a1e;top:-8px}
-    .ioe-tri-down{border-left:22px solid transparent;border-right:22px solid transparent;border-top:38px solid #1a3a5c;bottom:-8px}
-    /* Inner circle */
-    .ioe-inner-circle{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid #cc0000;display:flex;align-items:center;justify-content:center;z-index:3}
-    .ioe-inner-dot{width:8px;height:8px;border-radius:50%;background:#cc0000}
+    .tu-logo-img{width:90px;height:90px;object-fit:contain;display:block}
     @media(max-width:600px){
       .identity-inner{flex-direction:column;text-align:center;gap:12px}
       .idb-main-name{font-size:1.15rem}
       .rc-cross-svg{width:60px;height:60px}
-      .ioe-emblem,.ioe-outer{width:70px;height:70px}
-      .ioe-ring-text{width:70px;height:70px}
+      .tu-logo-img{width:70px;height:70px}
     }
   </style>
 </head>
@@ -72,31 +59,15 @@
         <div class="idb-address">IOE, Thapathali Campus<br/>Thapathali, Kathmandu</div>
       </div>
 
-      <!-- RIGHT: IOE Thapathali Campus Emblem (pure CSS + SVG) -->
+      <!-- RIGHT: Tribhuvan University Logo -->
       <div class="idb-right">
-        <div class="ioe-emblem">
-          <div class="ioe-outer">
-            <!-- Circular text around the emblem using SVG -->
-            <svg class="ioe-ring-text" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <path id="topArc" d="M 10,45 A 35,35 0 0,1 80,45"/>
-                <path id="botArc" d="M 80,45 A 35,35 0 0,1 10,45"/>
-              </defs>
-              <text font-size="7.5" font-family="Inter,sans-serif" font-weight="700" fill="#1a3a5c" letter-spacing="1.2">
-                <textPath href="#topArc" startOffset="5%">INSTITUTE OF ENGINEERING</textPath>
-              </text>
-              <text font-size="7.5" font-family="Inter,sans-serif" font-weight="700" fill="#1a3a5c" letter-spacing="1.5">
-                <textPath href="#botArc" startOffset="8%">THAPATHALI CAMPUS</textPath>
-              </text>
-            </svg>
-            <!-- Star of David (two triangles) in center -->
-            <div class="ioe-star">
-              <div class="ioe-tri ioe-tri-up"></div>
-              <div class="ioe-tri ioe-tri-down"></div>
-              <div class="ioe-inner-circle"><div class="ioe-inner-dot"></div></div>
-            </div>
-          </div>
-        </div>
+        <!-- TU logo loaded from Wikimedia Commons – no upload needed -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/0/04/Tribhuvan_University_logo.png"
+          alt="Tribhuvan University – IOE Thapathali Campus"
+          class="tu-logo-img"
+          onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tribhuvan_University_logo_%28seal%29.png/240px-Tribhuvan_University_logo_%28seal%29.png';"
+        />
       </div>
 
     </div>
