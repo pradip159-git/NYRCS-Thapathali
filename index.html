@@ -8,8 +8,100 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ===== IDENTITY BANNER ===== */
+    .identity-banner{background:#fff;border-bottom:2px solid #e8e8e8;padding:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .identity-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1200px;margin:0 auto;padding:0 24px}
+    /* Left: Red Cross SVG logo */
+    .idb-left{flex-shrink:0}
+    .rc-cross-svg{width:80px;height:80px;filter:drop-shadow(2px 2px 4px rgba(0,0,0,.1))}
+    /* Center: org name text */
+    .idb-center{text-align:center;flex:1}
+    .idb-main-name{font-size:1.65rem;font-weight:900;color:#cc0000;letter-spacing:.5px;line-height:1.1;font-family:'Inter',sans-serif;text-transform:uppercase}
+    .idb-sub-name{font-size:1rem;font-weight:700;color:#cc0000;margin:3px 0 6px}
+    .idb-address{font-size:0.9rem;color:#333;font-weight:500;line-height:1.5}
+    /* Right: IOE Thapathali Campus CSS emblem */
+    .idb-right{flex-shrink:0}
+    .ioe-emblem{width:90px;height:90px;position:relative;display:flex;align-items:center;justify-content:center}
+    /* Outer circle border */
+    .ioe-outer{width:90px;height:90px;border-radius:50%;border:3px solid #1a3a5c;display:flex;align-items:center;justify-content:center;position:relative;background:#fff}
+    /* Rotating text ring using SVG */
+    .ioe-ring-text{position:absolute;top:0;left:0;width:90px;height:90px}
+    /* Star of David (two overlapping triangles) */
+    .ioe-star{position:relative;width:46px;height:46px;display:flex;align-items:center;justify-content:center}
+    .ioe-tri{width:0;height:0;position:absolute}
+    .ioe-tri-up{border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid #e05a1e;top:-8px}
+    .ioe-tri-down{border-left:22px solid transparent;border-right:22px solid transparent;border-top:38px solid #1a3a5c;bottom:-8px}
+    /* Inner circle */
+    .ioe-inner-circle{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid #cc0000;display:flex;align-items:center;justify-content:center;z-index:3}
+    .ioe-inner-dot{width:8px;height:8px;border-radius:50%;background:#cc0000}
+    @media(max-width:600px){
+      .identity-inner{flex-direction:column;text-align:center;gap:12px}
+      .idb-main-name{font-size:1.15rem}
+      .rc-cross-svg{width:60px;height:60px}
+      .ioe-emblem,.ioe-outer{width:70px;height:70px}
+      .ioe-ring-text{width:70px;height:70px}
+    }
+  </style>
 </head>
 <body>
+
+  <!-- ============================================================
+    IDENTITY BANNER  (top of every page – org name + logos)
+    Built with pure CSS/SVG – no images needed
+    Left: Red Cross symbol (SVG)
+    Center: Organization name & address text
+    Right: IOE Thapathali Campus emblem (CSS + SVG)
+  ============================================================ -->
+  <div class="identity-banner">
+    <div class="identity-inner">
+
+      <!-- LEFT: Red Cross Symbol (pure SVG) -->
+      <div class="idb-left">
+        <svg class="rc-cross-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Red Cross Symbol">
+          <!-- Red cross shape made of rectangles -->
+          <rect x="35" y="5"  width="30" height="90" rx="4" fill="#cc0000"/>
+          <rect x="5"  y="35" width="90" height="30" rx="4" fill="#cc0000"/>
+        </svg>
+      </div>
+
+      <!-- CENTER: Organization name -->
+      <div class="idb-center">
+        <div class="idb-main-name">Nepal Red Cross Society</div>
+        <div class="idb-sub-name">Youth Red Cross Circle</div>
+        <div class="idb-address">IOE, Thapathali Campus<br/>Thapathali, Kathmandu</div>
+      </div>
+
+      <!-- RIGHT: IOE Thapathali Campus Emblem (pure CSS + SVG) -->
+      <div class="idb-right">
+        <div class="ioe-emblem">
+          <div class="ioe-outer">
+            <!-- Circular text around the emblem using SVG -->
+            <svg class="ioe-ring-text" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <path id="topArc" d="M 10,45 A 35,35 0 0,1 80,45"/>
+                <path id="botArc" d="M 80,45 A 35,35 0 0,1 10,45"/>
+              </defs>
+              <text font-size="7.5" font-family="Inter,sans-serif" font-weight="700" fill="#1a3a5c" letter-spacing="1.2">
+                <textPath href="#topArc" startOffset="5%">INSTITUTE OF ENGINEERING</textPath>
+              </text>
+              <text font-size="7.5" font-family="Inter,sans-serif" font-weight="700" fill="#1a3a5c" letter-spacing="1.5">
+                <textPath href="#botArc" startOffset="8%">THAPATHALI CAMPUS</textPath>
+              </text>
+            </svg>
+            <!-- Star of David (two triangles) in center -->
+            <div class="ioe-star">
+              <div class="ioe-tri ioe-tri-up"></div>
+              <div class="ioe-tri ioe-tri-down"></div>
+              <div class="ioe-inner-circle"><div class="ioe-inner-dot"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END IDENTITY BANNER -->
 
   <!-- TOP BAR -->
   <div class="top-bar">
