@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Get Involved – YRC</title>
+  <meta name="description" content="Get involved with Youth Redcross Circle, Thapathali Campus through volunteering, donating, or giving blood."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .vol-why{padding:80px 0;background:#f7f7f7}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+    .why-card{background:#fff;border-radius:10px;padding:32px 26px;box-shadow:0 4px 20px rgba(0,0,0,.07);text-align:center;transition:transform .3s}
+    .why-card:hover{transform:translateY(-6px)}
+    .why-card i{font-size:2.2rem;color:#cc0000;margin-bottom:16px}
+    .why-card h4{font-size:1rem;font-weight:700;color:#1a3a5c;margin-bottom:10px}
+    .why-card p{color:#666;font-size:0.88rem;line-height:1.6}
+    .vol-form-section{padding:80px 0;background:#fff}
+    .vol-form-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+    .vol-info h2{font-size:1.8rem;font-weight:800;color:#1a3a5c;margin-bottom:18px}
+    .vol-info p{color:#555;line-height:1.8;margin-bottom:16px}
+    .vol-steps{margin-top:24px}
+    .step{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+    .step-num{width:40px;height:40px;background:#cc0000;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0}
+    .step-text h4{font-weight:700;color:#1a3a5c;margin-bottom:4px}
+    .step-text p{color:#666;font-size:0.88rem}
+    .vol-form-box{background:#f7f7f7;border-radius:12px;padding:40px}
+    .vol-form-box h2{font-size:1.5rem;font-weight:800;color:#1a3a5c;margin-bottom:24px}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-weight:600;color:#333;margin-bottom:7px;font-size:0.88rem}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:6px;font-size:0.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .3s;background:#fff}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#cc0000}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .btn-submit{background:#cc0000;color:#fff;border:none;padding:14px 36px;border-radius:6px;font-weight:700;font-size:1rem;cursor:pointer;transition:background .3s;width:100%}
+    .btn-submit:hover{background:#a00000}
+    .success-msg{display:none;background:#d4edda;color:#155724;padding:14px 20px;border-radius:6px;margin-top:10px;font-weight:600}
+    @media(max-width:768px){.why-grid{grid-template-columns:1fr}.vol-form-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><span><i class="fas fa-phone"></i> YRC Hotline: <strong>+977- 9866140598</strong></span><span><i class="fas fa-envelope"></i> <a href="mailto:tcioeredcrosscircle@gmail.com">tcioeredcrosscircle@gmail.com</a></span></div><div class="top-bar-right"><a href="volunteer.html" class="btn-volunteer">VOLUNTEER</a><a href="donate.html" class="btn-donate">DONATE</a></div></div></div>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="logo-link"><div class="logo-text"><span class="cross-icon">✚</span><div><span class="org-name">YRC</span><span class="org-full">Youth Redcross Circle, Thapathali Campus</span></div></div></a><nav class="main-nav"><ul><li class="has-dropdown"><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html#overview">Overview</a></li><li><a href="about.html#mission">Mission</a></li><li><a href="about.html#team">Our Team</a></li></ul></li><li class="has-dropdown"><a href="programs.html">Our Works <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="programs.html#blood">Blood Donation</a></li><li><a href="programs.html#health">Health Services</a></li><li><a href="programs.html#disaster">Disaster Response</a></li></ul></li><li class="has-dropdown"><a href="get-involved.html">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li></ul></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+  <section class="page-hero">
+    <div class="container"><h1>Get Involved</h1><p>Join YRC and serve your community with compassion and dedication</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Get Involved</span></div></div>
+  </section>
+
+
+  <!-- GET INVOLVED -->
+  <section class="get-involved" style="padding: 80px 0;">
+    <div class="container get-involved-grid">
+      <div class="involve-card volunteer-card" style="margin: 15px; border-radius: 8px;">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Become a Volunteer</h3>
+        <p>Join Youth RedCross Circle, Thapathali Campus as a volunteer and make a real difference in your community. Training provided.</p>
+        <a href="volunteer.html" class="btn btn-white">Volunteer Now</a>
+      </div>
+      <div class="involve-card donate-card" style="margin: 15px; border-radius: 8px;">
+        <i class="fas fa-hand-holding-usd"></i>
+        <h3>Make a Donation</h3>
+        <p>Your contribution supports our programs in disaster relief, health, blood donation, and youth empowerment.</p>
+        <a href="donate.html" class="btn btn-white">Donate Now</a>
+      </div>
+      <div class="involve-card blood-card" style="margin: 15px; border-radius: 8px;">
+        <i class="fas fa-tint"></i>
+        <h3>Donate Blood</h3>
+        <p>Blood donation saves lives. Join our regular blood donation camps at Thapathali Campus.</p>
+        <a href="programs.html#blood" class="btn btn-white">Donate Blood</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><div class="footer-logo"><span class="cross-icon red">✚</span><div><span class="footer-org-name">YRC</span><span class="footer-org-full">Youth Redcross Circle, Thapathali Campus</span></div></div><p>A branch of Nepal Red Cross Society dedicated to humanitarian service at Thapathali Campus, Kathmandu.</p><div class="footer-social"><a href="https://www.facebook.com/profile.php?id=61559553599416" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Works</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +977- 9866140598</li><li><i class="fas fa-envelope"></i> <a href="mailto:tcioeredcrosscircle@gmail.com">tcioeredcrosscircle@gmail.com</a></li><li><i class="fas fa-map-marker-alt"></i> Thapathali Campus, Kathmandu</li></ul><a href="donate.html" class="btn-donate-footer">DONATE</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2025 YRC. All Rights Reserved. | A Branch of <a href="https://nrcs.org" target="_blank">NRCS</a></p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>function submitVol(e){e.preventDefault();document.getElementById('volSuccess').style.display='block';document.getElementById('volForm').reset();setTimeout(()=>{document.getElementById('volSuccess').style.display='none';},6000);}</script>
+</body>
+</html>
+
